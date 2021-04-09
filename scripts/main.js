@@ -712,7 +712,7 @@ const mainFunc = async () => {
     allQuizzes = await allQuestions.json()
     
 
-    console.log(allQuizzes)
+    
 
 }
 
@@ -774,10 +774,9 @@ function questionFunction() {
     let arrayLenght = allQuizzes.length
     let rendom = getRandomInt(arrayLenght);
     let elemID = allQuizzes[rendom].id
-    // console.log(elemID)
+    
 
     if(balEl == 0 ) {
-        console.log('tugadi')
         fail();
     }
 
@@ -803,7 +802,7 @@ function questionFunction() {
         btnsElem.forEach(el => {
             el.addEventListener('click', async (evt) => {
 
-                console.log('checking...')
+               
                 spiner.classList.add('show')
 
                 const result = await fetch(`${ENDPOINT}/answer`, {
@@ -818,7 +817,7 @@ function questionFunction() {
                 })
 
                 spiner.classList.remove('show')
-                console.log('done:')
+              
                 let togri = await result.json()
 
                 
@@ -836,7 +835,7 @@ function questionFunction() {
                                 y: 0.6
                             }
                         });
-                        console.log(allQuizzes.length)
+                        
 
                         let y = 3
                         setTimeout(() => {
@@ -901,7 +900,6 @@ function questionFunction() {
         successCard.classList.add('be-success')
         wrapper.style.display = 'none'
         arrowBlock.style.display = 'none'
-        // failCard.style.display='none'
         overlay.classList.remove('fail')
         wrapper.style.display = 'none';
         nexLevelBtn.addEventListener('click', function () {
@@ -918,7 +916,6 @@ function questionFunction() {
     function step() {
         if (allQuizzes.length <= 0) {
         
-            // alert('Maqtov yorligi olib chiqilar')
             cong()
             
             

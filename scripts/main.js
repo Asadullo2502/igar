@@ -881,7 +881,7 @@ function questionFunction() {
                         setTimeout(() => {
                             audio.pause();
                             wrapper.classList.remove('active');
-                        }, 800);
+                        }, 700);
                     }
                 
 

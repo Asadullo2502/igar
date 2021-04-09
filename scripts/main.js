@@ -804,6 +804,7 @@ function questionFunction() {
 
                
                 spiner.classList.add('show')
+                time
 
                 const result = await fetch(`${ENDPOINT}/answer`, {
                     method: 'post',

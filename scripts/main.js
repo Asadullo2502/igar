@@ -645,8 +645,6 @@ let nextStep = document.querySelector('#nextBosqich');
 let finalBlock = document.querySelector('.final-block');
 let finalBtn = document.querySelector('#final-btn')
 let arrowBlock = document.querySelector('#arrow-block')
-audio = document.getElementById("audio");
-audio1 = document.getElementById("audio1");
 
 
 aboutBtn.addEventListener('click', function() {
@@ -830,7 +828,7 @@ function questionFunction() {
                         balEl = Number(ball.textContent) + 2;
                         ball.innerHTML = balEl
                         el.classList.add('true');
-                        audio1.play()
+                        
                         confetti({
                             particleCount: 100,
                             spread: 70,
@@ -842,7 +840,6 @@ function questionFunction() {
 
                         let y = 3
                         setTimeout(() => {
-                            audio1.pause()
                             allQuizzes.splice(rendom, 1);
                             step();
                             time = Math.floor(startingMinutes * 60);
@@ -863,7 +860,7 @@ function questionFunction() {
 
 
                             })
-                        }, 800);
+                        }, 500);
 
 
 
@@ -871,7 +868,7 @@ function questionFunction() {
                     } else {
                         el.classList.add('false');
                         wrapper.classList.add('active');
-                        audio.play();
+                        
                         el.disabled = true
                         balEl = Number(ball.textContent) - 2;
                         ball.innerHTML = balEl
@@ -879,9 +876,8 @@ function questionFunction() {
                             fail()
                         }
                         setTimeout(() => {
-                            audio.pause();
                             wrapper.classList.remove('active');
-                        }, 700);
+                        }, 500);
                     }
                 
 

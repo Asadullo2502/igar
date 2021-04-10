@@ -405,6 +405,7 @@ body {
             text-align: center;
             color: rgba(35, 161, 220, 0.75);
             margin-bottom: 30px;
+            padding-bottom: 30px;
 
             @media only screen and(max-width:576px) {
             font-size: 12px;
@@ -418,6 +419,7 @@ body {
             color: rgba(35, 161, 220, 0.75);
             
             .team-server__name {
+                color: #23A1DC;
                 line-height: 21px;
                 text-decoration: underline;
             }

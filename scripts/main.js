@@ -827,7 +827,7 @@ function questionFunction() {
 
                 
                     if (togri.message == true) {
-                        
+                        el.disabled = true
                         balEl = Number(ball.textContent) + 2;
                         ball.innerHTML = balEl
                         el.classList.add('true');
@@ -843,6 +843,7 @@ function questionFunction() {
 
                         let y = 3
                         setTimeout(() => {
+                            el.disabled = false
                             allQuizzes.splice(rendom, 1);
                             step();
                             time = Math.floor(startingMinutes * 60);

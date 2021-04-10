@@ -41,7 +41,7 @@ a {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url(../images/back.jpg);
+  background-image: url(../images/back.png);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-sizing: border-box;
@@ -371,6 +371,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .section-2 .top {
+    margin-top: -50px;
     margin-bottom: 46px;
   }
 }
@@ -784,7 +785,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .section-3 .top {
-    margin-top: -150px;
+    margin-top: -50px;
   }
 }
 

@@ -367,8 +367,8 @@ body {
   height: 100%;
   position: relative;
   z-index: 5;
-  padding-bottom: 40px;
-  padding-top: 95px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -398,6 +398,11 @@ body {
   cursor: grab;
 }
 
+.section-2 .top .logo-wrapper img {
+  width: 320px;
+  height: 70px;
+}
+
 @media only screen and (max-width: 576px) {
   .section-2 .top .logo-wrapper img {
     width: 111px;
@@ -416,7 +421,7 @@ body {
 }
 
 .section-2 .about {
-  width: 768px;
+  width: 740px;
   background-color: #fff;
   background: #FFFFFF;
   -webkit-box-shadow: 15px 15px 35px #0C75A6;
@@ -433,14 +438,14 @@ body {
 }
 
 .section-2 .about-top {
-  padding: 16px 0;
+  padding: 10px 0;
   border-bottom: 2px solid #23A1DC;
 }
 
 .section-2 .about-top__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   text-align: center;
   color: #23A1DC;
@@ -477,9 +482,9 @@ body {
   width: 500px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
   color: #23A1DC;
   margin: 0 auto;
   margin-bottom: 31px;
@@ -506,7 +511,7 @@ body {
   font-style: normal;
   font-weight: bolder;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: #23A1DC;
@@ -526,7 +531,7 @@ body {
 .section-2 .about .team-name {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   text-align: center;
   color: rgba(35, 161, 220, 0.75);
@@ -538,6 +543,17 @@ body {
     font-size: 12px;
     line-height: 17px;
   }
+}
+
+.section-2 .about .team-server {
+  font-size: 12px;
+  text-align: center;
+  color: rgba(35, 161, 220, 0.75);
+}
+
+.section-2 .about .team-server .team-server__name {
+  line-height: 21px;
+  text-decoration: underline;
 }
 
 .section-2 .about .liders-block {
@@ -688,7 +704,7 @@ body {
 .section-2 .about-bottom__text {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   text-align: center;
   color: #23A1DC;
@@ -713,7 +729,7 @@ body {
   padding: 6px 25px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   border: none;
   outline: none;
@@ -813,7 +829,7 @@ body {
 .section-3 .top .arrow-back {
   cursor: -webkit-grab;
   cursor: grab;
-  width: 40px;
+  width: 25px;
   height: 33,28px;
 }
 
@@ -1013,7 +1029,7 @@ body {
 .section-3 .question-wrapper-top-left__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   color: #FFFFFF;
 }
@@ -1045,7 +1061,7 @@ body {
 .section-3 .question-wrapper-top-center__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   color: #FFFFFF;
 }
@@ -1078,7 +1094,7 @@ body {
 .section-3 .question-wrapper-top-right__title {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   color: #FFFFFF;
   text-align: center;
@@ -1343,7 +1359,7 @@ body {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
@@ -1474,7 +1490,7 @@ body {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
@@ -1504,7 +1520,7 @@ body {
   margin-left: 27px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
@@ -1645,7 +1661,7 @@ body {
 .congratulation-block__text {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   color: #23A1DC;
@@ -1678,7 +1694,7 @@ body {
   padding: 11px 38px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
@@ -1745,7 +1761,7 @@ body {
 .final-block-header__title {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   color: #23A1DC;
@@ -1859,7 +1875,7 @@ body {
   .final-block-footer__title {
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27px;
     text-align: center;
     color: #23A1DC;
@@ -1902,7 +1918,7 @@ body {
   padding: 6px 35px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   color: #FFFFFF;
   display: block;

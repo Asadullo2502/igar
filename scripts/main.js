@@ -874,7 +874,7 @@ function questionFunction() {
                         wrapper.classList.add('active');
                         
                         el.disabled = true
-                        // balEl = Number(ball.textContent) - 2;
+                        balEl = Number(ball.textContent) - 2;
                         ball.innerHTML = balEl
                         if (balEl <= 0) {
                             fail()

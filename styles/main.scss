@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
+    overflow: hidden;
 
     @media only screen and(max-width:576px) {
         height: 100vh;
@@ -435,12 +436,32 @@ body {
                     background-color: #fff;
                     border: 2px solid #23A1DC;
                     box-shadow: 0 0 0 0 transparent;
+
+                    svg {
+                        fill: #23A1DC;
+                        border: 2px solid #23A1DC;
+                        transition: all ease 0.5s;
+                        box-shadow: none;
+                    }
                 }
 
                 &-top {
                     box-sizing: border-box;
                     margin-bottom: 10px;
                     filter: drop-shadow(0px 2px 5px rgba(6, 104, 150, 0.82));
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        width: 85px;
+                        height: 85px;
+                        fill: white;
+                        border: 2px solid white;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                        padding: 5px;
+                    }
 
                     &__img {
                         width: 85px;
@@ -594,7 +615,7 @@ body {
         justify-content: space-between;
         width: 100%;
         margin-bottom: 50px;
-        padding: 0 50px;
+        padding: 0 25px;
         box-sizing: border-box;
         align-items: center;
 
@@ -1441,7 +1462,7 @@ body {
             font-size: 16px;
             line-height: 24px;
             text-align: center;
-            color: #FFC700;
+            color: #fff;
             width: 440px;
             margin: 0 auto;
 
@@ -1451,7 +1472,7 @@ body {
                 font-size: 11px;
                 line-height: 16px;
                 text-align: center;
-                color: #FFC700;
+                color: #fff;
                 width: 280px;
             }
         }

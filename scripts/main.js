@@ -666,7 +666,7 @@ start.addEventListener('click', function() {
     main.classList.add('hidden');
     
 
-    startGame(0);
+    startGame();
     questionFunction();
     
 })
@@ -710,9 +710,6 @@ const mainFunc = async () => {
     const allQuestions = await fetch(`${ENDPOINT}/questions`)
 
     allQuizzes = await allQuestions.json()
-    
-
-    
 
 }
 
@@ -746,13 +743,14 @@ function updateCountdown() {
         fail()
     }
 };
+let startingGame;
 
 
 function startGame() {
     
-    setInterval(updateCountdown, 1000)
+     startingGame = setInterval(updateCountdown, 1000)
 
-    updateCountdown()
+    return startingGame
 }
 
 function getRandomInt(max) {
@@ -798,14 +796,18 @@ function questionFunction() {
     let btnsElem = document.querySelectorAll('.question-wrapper-bottom__answer')
     let spiner  = document.querySelector('.spiner')
     
+    
     function trueAnswer() {
         btnsElem.forEach(el => {
             el.addEventListener('click', async (evt) => {
 
-               
+                // user send the anwser
                 spiner.classList.add('show')
-                time
-
+                // stop time reason for fetching true answer
+                
+            //    let hello = time.textContent
+               clearInterval(startingGame);
+                
                 const result = await fetch(`${ENDPOINT}/answer`, {
                     method: 'post',
                     headers: {
@@ -817,14 +819,15 @@ function questionFunction() {
                     })
                 })
 
+                // we get the answer so remove the spinner
                 spiner.classList.remove('show')
+                startingGame = setInterval(updateCountdown, 1000)
               
                 let togri = await result.json()
 
                 
                     if (togri.message == true) {
                         
-
                         balEl = Number(ball.textContent) + 2;
                         ball.innerHTML = balEl
                         el.classList.add('true');
